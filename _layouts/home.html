@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="card-columns">
+    {% for post in site.posts %}
+        {% include post.html %}
+    {% endfor %}
+</div>
