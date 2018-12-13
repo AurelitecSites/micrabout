@@ -17,6 +17,10 @@
         {% if post.content %}
             {{ post.content }}
         {% endif %}
+        
+        {% if post.lead %}
+            <p class="lead">{{ post.lead }}</p>
+        {% endif %}
 
         {% if post.quote %}
             {% include post-quote.html %}
