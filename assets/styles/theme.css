@@ -72,6 +72,12 @@ a, a:focus, a:hover {
     font-size: 1rem;
 } */
 
+/* Post Content */
+
+.tlog-post-lead {
+    font-weight: bold;
+}
+
 /* Post Footer */
 
 .tlog-post-footer {
