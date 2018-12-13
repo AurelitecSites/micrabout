@@ -11,9 +11,11 @@
 
     <div class="tlog-quote__content {% if post.sized_quote %}tlog-sized-quote tlog-sized-quote--{{ size_class }}{% endif %}">{{ post.quote }}</div>
 
-    {% if post.cite %}
+    {% if post.cite or post.lang %}
         <footer class="blockquote-footer tlog-quote__footer">
-            {{ post.cite | replace: "<a>", '<a href="url" target="_blank">' | replace: 'url', post.link }}
+            {% if post.cite %}
+                {{ post.cite | replace: "<a>", '<a href="url" target="_blank">' | replace: 'url', post.link }}
+            {% endif %}
 
             {% if post.lang %}
                 <span class="tlog-quote__lang">(translated from {{ post.lang }})</span>
