@@ -29,5 +29,7 @@ rss: rss
 # - username: jekyll2
 #   instance: example.com
 
+permalink: pretty
+
 plugins:
  - jekyll-seo-tag
