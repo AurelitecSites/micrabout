@@ -33,3 +33,5 @@ permalink: pretty
 
 plugins:
  - jekyll-seo-tag
+
+theme: jekyll-theme-micrabout
